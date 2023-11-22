@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		072E1AA12AE9AA99006B96B3 /* VideoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072E1AA02AE9AA99006B96B3 /* VideoListView.swift */; };
+		072E1AA32AE9AC39006B96B3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072E1AA22AE9AC39006B96B3 /* MapView.swift */; };
+		072E1AA52AE9AC6E006B96B3 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072E1AA42AE9AC6E006B96B3 /* GalleryView.swift */; };
+		072E1AA92AE9AD74006B96B3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072E1AA82AE9AD74006B96B3 /* MainView.swift */; };
+		072E1AAC2AE9B4EF006B96B3 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072E1AAB2AE9B4EF006B96B3 /* CoverImageView.swift */; };
+		072E1AAF2AE9C50E006B96B3 /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072E1AAE2AE9C50E006B96B3 /* CoverImageModel.swift */; };
+		072E1AB22AE9C68D006B96B3 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072E1AB12AE9C68D006B96B3 /* CodableBundleExtension.swift */; };
+		072E1AB42AEA5E93006B96B3 /* AnimalListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072E1AB32AEA5E93006B96B3 /* AnimalListItemView.swift */; };
+		072E1AB62AEA6235006B96B3 /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072E1AB52AEA6235006B96B3 /* AnimalModel.swift */; };
+		075271DC2AEBC33200C5D3B1 /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075271DB2AEBC33200C5D3B1 /* HeadingView.swift */; };
+		075271DE2AEBC85200C5D3B1 /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075271DD2AEBC85200C5D3B1 /* InsetGalleryView.swift */; };
+		075EB3D32AEA7EE60035BFE2 /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075EB3D22AEA7EE60035BFE2 /* AnimalDetailView.swift */; };
+		07C0CC9B2AE5BA0A004A0A72 /* AfricaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C0CC9A2AE5BA0A004A0A72 /* AfricaApp.swift */; };
+		07C0CC9D2AE5BA0A004A0A72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C0CC9C2AE5BA0A004A0A72 /* ContentView.swift */; };
+		07C0CC9F2AE5BA0C004A0A72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CC9E2AE5BA0C004A0A72 /* Assets.xcassets */; };
+		07C0CCA22AE5BA0C004A0A72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CCA12AE5BA0C004A0A72 /* Preview Assets.xcassets */; };
+		07C0CCB32AE5C4C7004A0A72 /* gorilla.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CCA92AE5C4C7004A0A72 /* gorilla.mp4 */; };
+		07C0CCB42AE5C4C7004A0A72 /* giraffe.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CCAA2AE5C4C7004A0A72 /* giraffe.mp4 */; };
+		07C0CCB52AE5C4C7004A0A72 /* lioness.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CCAB2AE5C4C7004A0A72 /* lioness.mp4 */; };
+		07C0CCB62AE5C4C7004A0A72 /* cheetah.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CCAC2AE5C4C7004A0A72 /* cheetah.mp4 */; };
+		07C0CCB72AE5C4C7004A0A72 /* lion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CCAD2AE5C4C7004A0A72 /* lion.mp4 */; };
+		07C0CCB82AE5C4C7004A0A72 /* ostrich.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CCAE2AE5C4C7004A0A72 /* ostrich.mp4 */; };
+		07C0CCB92AE5C4C7004A0A72 /* rhino.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CCAF2AE5C4C7004A0A72 /* rhino.mp4 */; };
+		07C0CCBA2AE5C4C7004A0A72 /* zebra.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CCB02AE5C4C7004A0A72 /* zebra.mp4 */; };
+		07C0CCBB2AE5C4C7004A0A72 /* elephant.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CCB12AE5C4C7004A0A72 /* elephant.mp4 */; };
+		07C0CCBC2AE5C4C7004A0A72 /* hippo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CCB22AE5C4C7004A0A72 /* hippo.mp4 */; };
+		07C0CCC52AE5C6AB004A0A72 /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CCC12AE5C6AA004A0A72 /* animals.json */; };
+		07C0CCC62AE5C6AB004A0A72 /* videos.json in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CCC22AE5C6AB004A0A72 /* videos.json */; };
+		07C0CCC72AE5C6AB004A0A72 /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CCC32AE5C6AB004A0A72 /* locations.json */; };
+		07C0CCC82AE5C6AB004A0A72 /* covers.json in Resources */ = {isa = PBXBuildFile; fileRef = 07C0CCC42AE5C6AB004A0A72 /* covers.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		072E1A9E2AE9A877006B96B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		072E1AA02AE9AA99006B96B3 /* VideoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListView.swift; sourceTree = "<group>"; };
+		072E1AA22AE9AC39006B96B3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		072E1AA42AE9AC6E006B96B3 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		072E1AA82AE9AD74006B96B3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		072E1AAB2AE9B4EF006B96B3 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
+		072E1AAE2AE9C50E006B96B3 /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
+		072E1AB12AE9C68D006B96B3 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
+		072E1AB32AEA5E93006B96B3 /* AnimalListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListItemView.swift; sourceTree = "<group>"; };
+		072E1AB52AEA6235006B96B3 /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
+		075271DB2AEBC33200C5D3B1 /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
+		075271DD2AEBC85200C5D3B1 /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
+		075EB3D22AEA7EE60035BFE2 /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
+		07C0CC972AE5BA0A004A0A72 /* Africa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Africa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C0CC9A2AE5BA0A004A0A72 /* AfricaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaApp.swift; sourceTree = "<group>"; };
+		07C0CC9C2AE5BA0A004A0A72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		07C0CC9E2AE5BA0C004A0A72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07C0CCA12AE5BA0C004A0A72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07C0CCA92AE5C4C7004A0A72 /* gorilla.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = gorilla.mp4; sourceTree = "<group>"; };
+		07C0CCAA2AE5C4C7004A0A72 /* giraffe.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = giraffe.mp4; sourceTree = "<group>"; };
+		07C0CCAB2AE5C4C7004A0A72 /* lioness.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lioness.mp4; sourceTree = "<group>"; };
+		07C0CCAC2AE5C4C7004A0A72 /* cheetah.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cheetah.mp4; sourceTree = "<group>"; };
+		07C0CCAD2AE5C4C7004A0A72 /* lion.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = lion.mp4; sourceTree = "<group>"; };
+		07C0CCAE2AE5C4C7004A0A72 /* ostrich.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = ostrich.mp4; sourceTree = "<group>"; };
+		07C0CCAF2AE5C4C7004A0A72 /* rhino.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rhino.mp4; sourceTree = "<group>"; };
+		07C0CCB02AE5C4C7004A0A72 /* zebra.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = zebra.mp4; sourceTree = "<group>"; };
+		07C0CCB12AE5C4C7004A0A72 /* elephant.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = elephant.mp4; sourceTree = "<group>"; };
+		07C0CCB22AE5C4C7004A0A72 /* hippo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = hippo.mp4; sourceTree = "<group>"; };
+		07C0CCC12AE5C6AA004A0A72 /* animals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
+		07C0CCC22AE5C6AB004A0A72 /* videos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = videos.json; sourceTree = "<group>"; };
+		07C0CCC32AE5C6AB004A0A72 /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		07C0CCC42AE5C6AB004A0A72 /* covers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = covers.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07C0CC942AE5BA0A004A0A72 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		072E1A9F2AE9A9D5006B96B3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				07C0CC9A2AE5BA0A004A0A72 /* AfricaApp.swift */,
+				07C0CC9C2AE5BA0A004A0A72 /* ContentView.swift */,
+				072E1AA02AE9AA99006B96B3 /* VideoListView.swift */,
+				072E1AA22AE9AC39006B96B3 /* MapView.swift */,
+				072E1AA42AE9AC6E006B96B3 /* GalleryView.swift */,
+				072E1AA82AE9AD74006B96B3 /* MainView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		072E1AAA2AE9B4C8006B96B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				072E1AAB2AE9B4EF006B96B3 /* CoverImageView.swift */,
+				072E1AB32AEA5E93006B96B3 /* AnimalListItemView.swift */,
+				075EB3D22AEA7EE60035BFE2 /* AnimalDetailView.swift */,
+				075271DB2AEBC33200C5D3B1 /* HeadingView.swift */,
+				075271DD2AEBC85200C5D3B1 /* InsetGalleryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		072E1AAD2AE9C4EE006B96B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				072E1AAE2AE9C50E006B96B3 /* CoverImageModel.swift */,
+				072E1AB52AEA6235006B96B3 /* AnimalModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		072E1AB02AE9C66A006B96B3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				072E1AB12AE9C68D006B96B3 /* CodableBundleExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		07C0CC8E2AE5BA0A004A0A72 = {
+			isa = PBXGroup;
+			children = (
+				07C0CC992AE5BA0A004A0A72 /* Africa */,
+				07C0CC982AE5BA0A004A0A72 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07C0CC982AE5BA0A004A0A72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07C0CC972AE5BA0A004A0A72 /* Africa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07C0CC992AE5BA0A004A0A72 /* Africa */ = {
+			isa = PBXGroup;
+			children = (
+				072E1AB02AE9C66A006B96B3 /* Extension */,
+				072E1AAD2AE9C4EE006B96B3 /* Model */,
+				072E1AAA2AE9B4C8006B96B3 /* View */,
+				072E1A9E2AE9A877006B96B3 /* Info.plist */,
+				07C0CCC02AE5C688004A0A72 /* Data */,
+				07C0CCA82AE5C421004A0A72 /* Video */,
+				072E1A9F2AE9A9D5006B96B3 /* App */,
+				07C0CC9E2AE5BA0C004A0A72 /* Assets.xcassets */,
+				07C0CCA02AE5BA0C004A0A72 /* Preview Content */,
+			);
+			path = Africa;
+			sourceTree = "<group>";
+		};
+		07C0CCA02AE5BA0C004A0A72 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				07C0CCA12AE5BA0C004A0A72 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		07C0CCA82AE5C421004A0A72 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				07C0CCAC2AE5C4C7004A0A72 /* cheetah.mp4 */,
+				07C0CCB12AE5C4C7004A0A72 /* elephant.mp4 */,
+				07C0CCAA2AE5C4C7004A0A72 /* giraffe.mp4 */,
+				07C0CCA92AE5C4C7004A0A72 /* gorilla.mp4 */,
+				07C0CCB22AE5C4C7004A0A72 /* hippo.mp4 */,
+				07C0CCAD2AE5C4C7004A0A72 /* lion.mp4 */,
+				07C0CCAB2AE5C4C7004A0A72 /* lioness.mp4 */,
+				07C0CCAE2AE5C4C7004A0A72 /* ostrich.mp4 */,
+				07C0CCAF2AE5C4C7004A0A72 /* rhino.mp4 */,
+				07C0CCB02AE5C4C7004A0A72 /* zebra.mp4 */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		07C0CCC02AE5C688004A0A72 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				07C0CCC12AE5C6AA004A0A72 /* animals.json */,
+				07C0CCC42AE5C6AB004A0A72 /* covers.json */,
+				07C0CCC32AE5C6AB004A0A72 /* locations.json */,
+				07C0CCC22AE5C6AB004A0A72 /* videos.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07C0CC962AE5BA0A004A0A72 /* Africa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C0CCA52AE5BA0C004A0A72 /* Build configuration list for PBXNativeTarget "Africa" */;
+			buildPhases = (
+				07C0CC932AE5BA0A004A0A72 /* Sources */,
+				07C0CC942AE5BA0A004A0A72 /* Frameworks */,
+				07C0CC952AE5BA0A004A0A72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Africa;
+			productName = Africa;
+			productReference = 07C0CC972AE5BA0A004A0A72 /* Africa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07C0CC8F2AE5BA0A004A0A72 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					07C0CC962AE5BA0A004A0A72 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 07C0CC922AE5BA0A004A0A72 /* Build configuration list for PBXProject "Africa" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07C0CC8E2AE5BA0A004A0A72;
+			productRefGroup = 07C0CC982AE5BA0A004A0A72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07C0CC962AE5BA0A004A0A72 /* Africa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07C0CC952AE5BA0A004A0A72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C0CCA22AE5BA0C004A0A72 /* Preview Assets.xcassets in Resources */,
+				07C0CCB32AE5C4C7004A0A72 /* gorilla.mp4 in Resources */,
+				07C0CCB72AE5C4C7004A0A72 /* lion.mp4 in Resources */,
+				07C0CCC62AE5C6AB004A0A72 /* videos.json in Resources */,
+				07C0CCB92AE5C4C7004A0A72 /* rhino.mp4 in Resources */,
+				07C0CCC82AE5C6AB004A0A72 /* covers.json in Resources */,
+				07C0CCBC2AE5C4C7004A0A72 /* hippo.mp4 in Resources */,
+				07C0CCB62AE5C4C7004A0A72 /* cheetah.mp4 in Resources */,
+				07C0CCC72AE5C6AB004A0A72 /* locations.json in Resources */,
+				07C0CCB52AE5C4C7004A0A72 /* lioness.mp4 in Resources */,
+				07C0CCC52AE5C6AB004A0A72 /* animals.json in Resources */,
+				07C0CCBA2AE5C4C7004A0A72 /* zebra.mp4 in Resources */,
+				07C0CCB42AE5C4C7004A0A72 /* giraffe.mp4 in Resources */,
+				07C0CCB82AE5C4C7004A0A72 /* ostrich.mp4 in Resources */,
+				07C0CC9F2AE5BA0C004A0A72 /* Assets.xcassets in Resources */,
+				07C0CCBB2AE5C4C7004A0A72 /* elephant.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07C0CC932AE5BA0A004A0A72 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C0CC9D2AE5BA0A004A0A72 /* ContentView.swift in Sources */,
+				072E1AB42AEA5E93006B96B3 /* AnimalListItemView.swift in Sources */,
+				072E1AA92AE9AD74006B96B3 /* MainView.swift in Sources */,
+				072E1AAC2AE9B4EF006B96B3 /* CoverImageView.swift in Sources */,
+				072E1AAF2AE9C50E006B96B3 /* CoverImageModel.swift in Sources */,
+				075EB3D32AEA7EE60035BFE2 /* AnimalDetailView.swift in Sources */,
+				072E1AB62AEA6235006B96B3 /* AnimalModel.swift in Sources */,
+				072E1AA32AE9AC39006B96B3 /* MapView.swift in Sources */,
+				07C0CC9B2AE5BA0A004A0A72 /* AfricaApp.swift in Sources */,
+				072E1AA12AE9AA99006B96B3 /* VideoListView.swift in Sources */,
+				072E1AA52AE9AC6E006B96B3 /* GalleryView.swift in Sources */,
+				075271DE2AEBC85200C5D3B1 /* InsetGalleryView.swift in Sources */,
+				072E1AB22AE9C68D006B96B3 /* CodableBundleExtension.swift in Sources */,
+				075271DC2AEBC33200C5D3B1 /* HeadingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		07C0CCA32AE5BA0C004A0A72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07C0CCA42AE5BA0C004A0A72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07C0CCA62AE5BA0C004A0A72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
+				DEVELOPMENT_TEAM = 7ACYR8LY74;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Africa/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergiyvergun.Africa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07C0CCA72AE5BA0C004A0A72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Africa/Preview Content\"";
+				DEVELOPMENT_TEAM = 7ACYR8LY74;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Africa/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sergiyvergun.Africa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07C0CC922AE5BA0A004A0A72 /* Build configuration list for PBXProject "Africa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C0CCA32AE5BA0C004A0A72 /* Debug */,
+				07C0CCA42AE5BA0C004A0A72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07C0CCA52AE5BA0C004A0A72 /* Build configuration list for PBXNativeTarget "Africa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C0CCA62AE5BA0C004A0A72 /* Debug */,
+				07C0CCA72AE5BA0C004A0A72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07C0CC8F2AE5BA0A004A0A72 /* Project object */;
+}
