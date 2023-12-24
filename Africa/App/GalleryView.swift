@@ -8,8 +8,31 @@
 import SwiftUI
 
 struct GalleryView: View {
+    
+    @State private var selectedAnimal: String = "lion"
+    
+    let animals: [Animal] = Bundle.main.decode("animals.json")
+    
+    let gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 3)
+    
     var body: some View {
-        Text("Gallery")
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack(alignment: .center, spacing: 30 ) {
+                Image(selectedAnimal).resizable().scaledToFit().cornerRadius(20)
+                LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
+                    ForEach(animals) { item in
+                        Image(item.image)
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(10)
+                            .onTapGesture {
+                                selectedAnimal = item.image
+                            }
+                    }
+                }
+            }.padding(.horizontal,10)
+                .padding(.vertical, 50 )
+        }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
     }
 }
 
