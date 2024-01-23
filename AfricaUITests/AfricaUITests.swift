@@ -42,6 +42,75 @@ final class AfricaUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Latitude:"].exists)
         XCTAssertTrue(app.staticTexts["Longitude:"].exists)
         
+        // Test browse tab
+        browseTabButton.tap()
+        XCTAssertTrue(app.staticTexts["Lion"].exists)
+        XCTAssertTrue(app.staticTexts["Zebra"].exists)
+        XCTAssertTrue(app.staticTexts["Rhinoceros"].exists)
+        app.swipeUp()
+        XCTAssertTrue(app.staticTexts["Elephant"].exists)
+        XCTAssertTrue(app.staticTexts["Cheetah"].exists)
+        XCTAssertTrue(app.staticTexts["Giraffe"].exists)
+        XCTAssertTrue(app.staticTexts["African buffalo"].exists)
+        XCTAssertTrue(app.staticTexts["Hippopotamus"].exists)
+        XCTAssertTrue(app.staticTexts["Wild dog"].exists)
+        XCTAssertTrue(app.staticTexts["Meerkat"].exists)
+        app.swipeUp()
+        XCTAssertTrue(app.staticTexts["Ostrich"].exists)
+        XCTAssertTrue(app.staticTexts["Gorilla"].exists)
+        
+        // Test grid button
+        let switchViewButton = app.navigationBars["Africa"].buttons["gridButton"]
+        XCTAssertTrue(switchViewButton.exists)
+        switchViewButton.tap()
+        XCTAssertFalse(app.staticTexts["Lion"].exists)
+        
+        // Test disable grid button
+        let disableGridButton = app.navigationBars["Africa"].buttons["disableGridButton"]
+        XCTAssertTrue(disableGridButton.exists)
+        disableGridButton.tap()
+        XCTAssertTrue(app.staticTexts["Lion"].exists)
+        
+        //Test animal tile on press navigation
+        let animalTileText = app.staticTexts["Lion"]
+        animalTileText.tap()
+        XCTAssertTrue(app.navigationBars["More about lion"].exists)
+        
+    
+        // Test watch tab
+        watchTabButton.tap()
+        
+        // Test video tile on press navigation
+        let animalVideoTileText = app.staticTexts["Cheetah"]
+        animalVideoTileText.tap()
+        let videoBackButton = app.navigationBars.buttons.element(boundBy: 0);
+        XCTAssertTrue(videoBackButton.exists)
+        videoBackButton.tap()
+        
+        // Test shuffle button
+        let staticTextsBeforeShuffle = app.staticTexts
+        let shuffleButton = app.navigationBars["Videos"].buttons["shuffleButton"]
+        shuffleButton.tap()
+        let staticTextsAfterShuffle = app.staticTexts
+        XCTAssertFalse(staticTextsBeforeShuffle == staticTextsAfterShuffle)
+        
+        // Test map tab
+        mapTabButton.tap()
+        
+        // Test pinching the map
+        let staticTextsBeforePinch = app.staticTexts
+        app.pinch(withScale: 2, velocity: 10)
+        let staticTextsAfterPinch = app.staticTexts
+        XCTAssertFalse(staticTextsBeforePinch==staticTextsAfterPinch)
+        
+        // Test gallery tab
+        galleryTabButton.tap()
+        let lionImage = app.images["lion"]
+        XCTAssertTrue(lionImage.exists)
+        
+        
+        
+
         
         
     }

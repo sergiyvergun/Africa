@@ -16,6 +16,7 @@ struct AnimalGridItemView: View {
             .resizable()
             .scaledToFit()
             .cornerRadius(12)
+            .accessibility(identifier:animal.image)
     }
 }
 

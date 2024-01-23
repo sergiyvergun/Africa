@@ -71,7 +71,7 @@ struct ContentView: View {
                                 Image(systemName: "square.fill.text.grid.1x2")
                                     .font(.title2)
                                     .foregroundColor(isGridViewActive ? .primary: .accentColor)
-                            }
+                            }.accessibility(identifier: "disableGridButton")
                             Button(action: {
                                 isGridViewActive = true
                                 switchGrid()
@@ -79,7 +79,7 @@ struct ContentView: View {
                                 Image(systemName: toolbarIcon)
                                     .font(.title2)
                                     .foregroundColor(isGridViewActive ? .accentColor: .primary)
-                            }
+                            }.accessibility(identifier: "gridButton")
                         }
                     }
                 }

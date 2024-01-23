@@ -31,7 +31,7 @@ struct VideoListView: View {
                             hapticImpact.impactOccurred()
                         }){
                             Image(systemName: "arrow.2.squarepath")
-                        }
+                        }.accessibility(identifier: "shuffleButton")
                     }
                 }
         }
